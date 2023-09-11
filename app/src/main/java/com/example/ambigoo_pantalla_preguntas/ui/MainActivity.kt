@@ -1,8 +1,9 @@
-package com.example.ambigoo_pantalla_preguntas
+package com.example.ambigoo_pantalla_preguntas.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.ambigoo_pantalla_preguntas.databinding.ActivityMainBinding
+import dagger.hilt.android.AndroidEntryPoint
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding

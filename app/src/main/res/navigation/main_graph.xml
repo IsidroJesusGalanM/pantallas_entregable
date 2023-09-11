@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/firstFragment"
-        android:name="com.example.ambigoo_pantalla_preguntas.FirstFragment"
+        android:name="com.example.ambigoo_pantalla_preguntas.ui.FirstFragment"
         android:label="fragment_first"
         tools:layout="@layout/fragment_first" >
         <action
@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/secondFragment"
-        android:name="com.example.ambigoo_pantalla_preguntas.SecondFragment"
+        android:name="com.example.ambigoo_pantalla_preguntas.ui.SecondFragment"
         android:label="fragment_second"
         tools:layout="@layout/fragment_second" >
         <action
@@ -25,7 +25,7 @@
     </fragment>
     <fragment
         android:id="@+id/thirdFragment"
-        android:name="com.example.ambigoo_pantalla_preguntas.ThirdFragment"
+        android:name="com.example.ambigoo_pantalla_preguntas.ui.ThirdFragment"
         android:label="fragment_third"
         tools:layout="@layout/fragment_third" >
         <action
@@ -34,7 +34,7 @@
     </fragment>
     <fragment
         android:id="@+id/fourFragment"
-        android:name="com.example.ambigoo_pantalla_preguntas.FourFragment"
+        android:name="com.example.ambigoo_pantalla_preguntas.ui.FourFragment"
         android:label="fragment_four"
         tools:layout="@layout/fragment_four" >
         <action
@@ -43,7 +43,7 @@
     </fragment>
     <fragment
         android:id="@+id/fiveFragment"
-        android:name="com.example.ambigoo_pantalla_preguntas.FiveFragment"
+        android:name="com.example.ambigoo_pantalla_preguntas.ui.FiveFragment"
         android:label="fragment_five"
         tools:layout="@layout/fragment_five" />
 </navigation>

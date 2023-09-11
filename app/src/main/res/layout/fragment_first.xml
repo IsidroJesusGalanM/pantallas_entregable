@@ -1,20 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FirstFragment">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.FirstFragment"
+    android:padding="15dp">
+
+    <ImageView
+        android:id="@+id/back"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/back_arrow"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+         />
+
+    <ProgressBar
+        android:id="@+id/screenMarker"
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        app:layout_constraintTop_toBottomOf="@id/back"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:max="5"
+        android:progress="1"
+        android:progressDrawable="@drawable/bg_progress_bar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        />
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="primer fragment" />
+        android:id="@+id/title"
+        app:layout_constraintTop_toBottomOf="@id/screenMarker"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="¿Cual es tu objetivo principal"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        />
 
-    <Button
-        android:id="@+id/buttonNav"
+    <RadioGroup
+        android:id="@+id/radioGroupObjetive"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="next"
-        android:layout_gravity="bottom"
-        />
-</FrameLayout>
+        app:layout_constraintTop_toBottomOf="@id/title"
+        android:layout_marginTop="10dp">
+
+        <RadioButton
+            android:id="@+id/comerEquilibrado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Comida Saludable"
+            android:drawableStart="@drawable/bg_radio_button"
+            android:drawablePadding="10dp"
+            android:button="@null"
+            android:padding="10dp"
+            />
+        <RadioButton
+            android:id="@+id/perderPeso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <RadioButton
+            android:id="@+id/ganarMusculo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
