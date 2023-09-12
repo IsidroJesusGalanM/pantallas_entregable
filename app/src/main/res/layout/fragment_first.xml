@@ -36,7 +36,7 @@
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
         android:layout_marginTop="12dp"
-        android:text="¿Cual es tu objetivo principal"
+        android:text="¿Cual es tu objetivo principal?"
         android:textSize="30dp"
         android:textStyle="bold"
         />
@@ -52,23 +52,51 @@
             android:id="@+id/comerEquilibrado"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Comida Saludable"
-            android:drawableStart="@drawable/bg_radio_button"
-            android:drawablePadding="10dp"
-            android:button="@null"
-            android:padding="10dp"
+            android:text="Comida saludable"
+            android:textSize="16sp"
+            style="@style/custom_radio_button"
             />
         <RadioButton
             android:id="@+id/perderPeso"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:text="Perder peso"
+            android:textSize="16dp"
+            style="@style/custom_radio_button"
+            />
 
         <RadioButton
             android:id="@+id/ganarMusculo"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
-
-
+            android:layout_height="wrap_content"
+            android:text="Ganar músculo"
+            android:textSize="16dp"
+            style="@style/custom_radio_button"/>
     </RadioGroup>
+    
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        style="@style/custom_button_orange"
+        android:text="Siguiente"
+        android:textSize="18sp"
+        android:padding="16dp"
+        android:layout_marginBottom="8dp"
+        />
+
+    <TextView
+        android:id="@+id/textInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Usamos esta informacion para calcular tus necesidades nutricionales y hacerte recomendaciones personalizadas"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@id/next"
+        android:layout_marginBottom="20dp"
+        android:layout_marginHorizontal="20dp"
+        android:textSize="15sp"
+        android:textColor="#80000000"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -24,7 +24,9 @@ class FirstFragment : Fragment() {
     }
 
     private fun setup() {
-
+        binding.next.setOnClickListener {
+            findNavController().navigate(R.id.action_firstFragment_to_secondFragment)
+        }
     }
 
 
