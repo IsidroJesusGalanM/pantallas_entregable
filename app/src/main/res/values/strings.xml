@@ -2,4 +2,6 @@
     <string name="app_name">ambigoo_pantalla_preguntas</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    
+    <string name="aviso_i">Nuestras recomendaciones han sido evaluadas por nutricionistas profesionales y solo sirven de guia. Si tienes una alergia alimentaria grave, te recomendamos que consultes siempre con tu médico antes de hacer cualquiera de nuestras recetas</string>
 </resources>

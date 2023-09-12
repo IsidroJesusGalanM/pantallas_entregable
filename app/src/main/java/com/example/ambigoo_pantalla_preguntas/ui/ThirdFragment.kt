@@ -5,11 +5,14 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import com.example.ambigoo_pantalla_preguntas.R
+import com.example.ambigoo_pantalla_preguntas.ThirdViewModel
 import com.example.ambigoo_pantalla_preguntas.databinding.FragmentThirdBinding
 
 class ThirdFragment : Fragment() {
+    private val viewModel: ThirdViewModel by viewModels()
     private lateinit var binding: FragmentThirdBinding
 
     override fun onCreateView(
