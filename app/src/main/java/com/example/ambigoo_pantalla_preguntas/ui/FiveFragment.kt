@@ -1,10 +1,11 @@
-package com.example.ambigoo_pantalla_preguntas
+package com.example.ambigoo_pantalla_preguntas.ui
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.example.ambigoo_pantalla_preguntas.R
 
 
 class FiveFragment : Fragment() {

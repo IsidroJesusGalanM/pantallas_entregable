@@ -7,43 +7,68 @@
 
     <fragment
         android:id="@+id/firstFragment"
-        android:name="com.example.ambigoo_pantalla_preguntas.FirstFragment"
+        android:name="com.example.ambigoo_pantalla_preguntas.ui.FirstFragment"
         android:label="fragment_first"
         tools:layout="@layout/fragment_first" >
         <action
             android:id="@+id/action_firstFragment_to_secondFragment"
-            app:destination="@id/secondFragment" />
+            app:destination="@id/secondFragment"
+            app:enterAnim="@anim/nav_default_pop_enter_anim"
+            app:exitAnim="@anim/nav_default_pop_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
     </fragment>
     <fragment
         android:id="@+id/secondFragment"
-        android:name="com.example.ambigoo_pantalla_preguntas.SecondFragment"
+        android:name="com.example.ambigoo_pantalla_preguntas.ui.SecondFragment"
         android:label="fragment_second"
         tools:layout="@layout/fragment_second" >
         <action
             android:id="@+id/action_secondFragment_to_thirdFragment"
-            app:destination="@id/thirdFragment" />
+            app:destination="@id/thirdFragment"
+            app:enterAnim="@anim/nav_default_pop_enter_anim"
+            app:exitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_secondFragment_to_firstFragment"
+            app:destination="@id/firstFragment"
+            app:enterAnim="@anim/nav_default_pop_enter_anim"
+            app:exitAnim="@anim/nav_default_pop_exit_anim" />
     </fragment>
     <fragment
         android:id="@+id/thirdFragment"
-        android:name="com.example.ambigoo_pantalla_preguntas.ThirdFragment"
+        android:name="com.example.ambigoo_pantalla_preguntas.ui.ThirdFragment"
         android:label="fragment_third"
         tools:layout="@layout/fragment_third" >
         <action
-            android:id="@+id/action_thirdFragment_to_fourFragment"
-            app:destination="@id/fourFragment" />
+            android:id="@+id/action_thirdFragment_to_secondFragment"
+            app:destination="@id/secondFragment"
+            app:enterAnim="@anim/nav_default_pop_enter_anim"
+            app:exitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_thirdFragment_to_fourFragment2"
+            app:destination="@id/fourFragment"
+            app:enterAnim="@anim/nav_default_pop_enter_anim"
+            app:exitAnim="@anim/nav_default_pop_exit_anim" />
     </fragment>
     <fragment
         android:id="@+id/fourFragment"
-        android:name="com.example.ambigoo_pantalla_preguntas.FourFragment"
+        android:name="com.example.ambigoo_pantalla_preguntas.ui.FourFragment"
         android:label="fragment_four"
         tools:layout="@layout/fragment_four" >
         <action
             android:id="@+id/action_fourFragment_to_fiveFragment"
             app:destination="@id/fiveFragment" />
+        <action
+            android:id="@+id/action_fourFragment_to_thirdFragment"
+            app:destination="@id/thirdFragment" />
     </fragment>
     <fragment
         android:id="@+id/fiveFragment"
-        android:name="com.example.ambigoo_pantalla_preguntas.FiveFragment"
+        android:name="com.example.ambigoo_pantalla_preguntas.ui.FiveFragment"
         android:label="fragment_five"
-        tools:layout="@layout/fragment_five" />
+        tools:layout="@layout/fragment_five" >
+        <action
+            android:id="@+id/action_fiveFragment_to_fourFragment"
+            app:destination="@id/fourFragment" />
+    </fragment>
 </navigation>

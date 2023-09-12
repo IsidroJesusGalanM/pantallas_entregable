@@ -1,4 +1,4 @@
-package com.example.ambigoo_pantalla_preguntas
+package com.example.ambigoo_pantalla_preguntas.ui
 
 import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
@@ -6,6 +6,9 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
+import com.example.ambigoo_pantalla_preguntas.R
+import com.example.ambigoo_pantalla_preguntas.SecondViewModel
 import com.example.ambigoo_pantalla_preguntas.databinding.FragmentSecondBinding
 
 class SecondFragment : Fragment() {
@@ -17,7 +20,17 @@ class SecondFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         binding = FragmentSecondBinding.inflate(layoutInflater,container,false)
+        setup()
         return binding.root
+    }
+
+    private fun setup() {
+        binding.back.setOnClickListener {
+            findNavController().navigate(R.id.action_secondFragment_to_firstFragment)
+        }
+        binding.next.setOnClickListener {
+            findNavController().navigate(R.id.action_secondFragment_to_thirdFragment)
+        }
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {

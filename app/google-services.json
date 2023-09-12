@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "737746029288",
+    "project_id": "amiboopersonalpruebas",
+    "storage_bucket": "amiboopersonalpruebas.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:737746029288:android:b93d5cc0b01837c38ed75d",
+        "android_client_info": {
+          "package_name": "com.example.ambigoo_pantalla_preguntas"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIXhimAMf5Jz3IvetPRnMpGwzqJX7IRFw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
