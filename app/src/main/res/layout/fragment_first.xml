@@ -36,7 +36,7 @@
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
         android:layout_marginTop="12dp"
-        android:text="¿Cual es tu objetivo principal2?"
+        android:text="¿Cual es tu objetivo principal?"
         android:textSize="30dp"
         android:textStyle="bold"
         />
