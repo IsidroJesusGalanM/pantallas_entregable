@@ -4,8 +4,12 @@ plugins {
     kotlin("kapt")
     id("androidx.navigation.safeargs.kotlin")
 
+    id ("com.google.dagger.hilt.android")
     //google firebase
     id("com.google.gms.google-services")
+
+    id("dagger.hilt.android.plugin")
+
 }
 
 android {
@@ -48,8 +52,11 @@ android {
 
 dependencies {
     //hilt
-    implementation("com.google.dagger:hilt-android:2.44")
-    kapt("com.google.dagger:hilt-android-compiler:2.44")
+    implementation ("com.google.dagger:hilt-android:2.47")
+    kapt("com.google.dagger:hilt-android-compiler:2.47")
+    kapt("androidx.hilt:hilt-compiler:1.0.0")
+
+
 
 
     //firebase implementation
@@ -66,7 +73,7 @@ dependencies {
     implementation("androidx.navigation:navigation-fragment-ktx:2.7.2")
     implementation("androidx.navigation:navigation-ui-ktx:2.7.2")
 
-    implementation("androidx.core:core-ktx:1.9.0")
+    implementation("androidx.core:core-ktx:1.12.0")
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.9.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
