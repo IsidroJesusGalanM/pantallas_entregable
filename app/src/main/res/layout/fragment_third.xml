@@ -19,7 +19,7 @@
     <ProgressBar
         android:id="@+id/screenMarker"
         android:layout_width="match_parent"
-        android:layout_height="12dp"
+        android:layout_height="10dp"
         app:layout_constraintTop_toBottomOf="@id/back"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="8dp"
@@ -41,7 +41,7 @@
         android:textStyle="bold"
         />
 
-    <androidx.appcompat.widget.AppCompatEditText
+    <EditText
         android:id="@+id/name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -51,6 +51,8 @@
         android:hint="Isidro Jesus"
         android:layout_marginTop="12dp"
         android:padding="18dp"
+        android:imeOptions="actionDone"
+        android:singleLine="true"
         />
 
     <TextView
@@ -74,6 +76,17 @@
         android:hint="6 de abril de 2001"
         android:layout_marginTop="12dp"
         android:padding="18dp"
+        android:enabled="false"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/born_picker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Elegir fecha"
+        style="@style/custom_button_orange"
+        app:layout_constraintTop_toBottomOf="@+id/born_date"
+        android:layout_marginTop="15dp"
         />
 
 
@@ -87,6 +100,7 @@
         android:textSize="18sp"
         android:padding="16dp"
         android:layout_marginBottom="8dp"
+        android:visibility="gone"
         />
 
     <TextView

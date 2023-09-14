@@ -28,4 +28,5 @@ object AppModule {
     fun provideSharedPreferences(@ApplicationContext context: Context): SharedPreferences{
         return context.getSharedPreferences("mi_saved_data",Context.MODE_PRIVATE)
     }
+
 }

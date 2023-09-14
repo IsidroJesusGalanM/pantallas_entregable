@@ -10,11 +10,12 @@ import javax.inject.Inject
 
 @HiltViewModel
 class FirstViewModel @Inject constructor(
-    val sharedPreferences: SharedPreferences) : ViewModel() {
+    private val sharedPreferences: SharedPreferences
+) : ViewModel() {
 
-    fun setData(objetive:String){
+    fun setData(objetive: String) {
         val prefs = sharedPreferences.edit()
-            prefs.putString("objetivo",objetive)
+        prefs.putString("objetivo", objetive)
         prefs.apply()
     }
 }

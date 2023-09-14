@@ -34,9 +34,7 @@ class FirstFragment : Fragment() {
         binding.radioGroupObjetive.setOnCheckedChangeListener { radioGroup, selected ->
             val selectedRadio = view?.findViewById<RadioButton>(selected)
             val selectedValue = selectedRadio?.text.toString()
-
             binding.next.visibility = View.VISIBLE
-            Toast.makeText(requireContext(), selectedValue, Toast.LENGTH_SHORT).show()
             viewModel.setData(selectedValue)
         }
         binding.next.setOnClickListener {
