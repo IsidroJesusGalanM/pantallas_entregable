@@ -13,6 +13,7 @@ import javax.inject.Inject
 class FiveViewModel @Inject constructor(private val sharedPreferences: SharedPreferences,private val firestore: FirebaseFirestore): ViewModel() {
     val collection = "USERS"
 
+
     private var _success = MutableLiveData<Boolean>()
     val success: LiveData<Boolean>
         get() = _success

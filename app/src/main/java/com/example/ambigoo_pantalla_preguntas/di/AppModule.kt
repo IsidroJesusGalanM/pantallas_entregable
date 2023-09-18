@@ -12,10 +12,14 @@ import dagger.hilt.android.qualifiers.ApplicationContext
 import dagger.hilt.components.SingletonComponent
 import javax.inject.Singleton
 
-
 @Module
 @InstallIn(SingletonComponent::class)
 object AppModule {
+    @Singleton
+    @Provides
+    fun provideApplication(@ApplicationContext context: Context): AmbigooApp{
+        return context as AmbigooApp
+    }
 
     @Singleton
     @Provides
@@ -25,8 +29,8 @@ object AppModule {
 
     @Singleton
     @Provides
-    fun provideSharedPreferences(@ApplicationContext context: Context): SharedPreferences{
-        return context.getSharedPreferences("mi_saved_data",Context.MODE_PRIVATE)
+    fun provideSharedPreferences(@ApplicationContext shared: Context): SharedPreferences{
+        return shared.getSharedPreferences("mi_saved_data",Context.MODE_PRIVATE)
     }
 
 }
